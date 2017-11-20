@@ -86,11 +86,17 @@ export class HomePage {
   }
 
   viewChecklist(checklist): void {
-
+    this.navCtrl.push('ChecklistPage', {
+      checklist: checklist
+    });
   }
 
   removeChecklist(checklist): void{
-
+    let index = this.checklists.indexOf(checklist);
+    if (index > -1){
+      this.checklists.splice(index, 1);
+      this.save();
+    }
   }
 
   save(): void{
