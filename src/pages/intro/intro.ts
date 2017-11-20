@@ -22,4 +22,8 @@ export class IntroPage {
     console.log('ionViewDidLoad IntroPage');
   }
 
+  goToHome(): void {
+    this.navCtrl.setRoot('HomePage');
+  }
+
 }
