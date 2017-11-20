@@ -1,26 +1,16 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
-import { IonicPage, NavController } from 'ionic-angular';
-=======
 import { IonicPage, NavController, AlertController, Platform } from 'ionic-angular';
 
 import { ChecklistModel } from '../../models/checklist-model';
 import { DataProvider } from '../../providers/data/data';
 import { Keyboard } from '@ionic-native/keyboard';
 import { Storage } from '@ionic/storage';
->>>>>>> 7e39fad6a8f0ad12ec5d441f6ac0312baec3434f
 
 @IonicPage()
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
-<<<<<<< HEAD
-export class HomePage {
-
-  constructor(public navCtrl: NavController) {
-
-=======
 
 export class HomePage {
 
@@ -142,7 +132,6 @@ export class HomePage {
   save(): void{
     this.keyboard.close();
     this.dataService.save(this.checklists);
->>>>>>> 7e39fad6a8f0ad12ec5d441f6ac0312baec3434f
   }
 
 }

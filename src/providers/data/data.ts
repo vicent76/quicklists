@@ -1,8 +1,5 @@
 import { Injectable } from '@angular/core';
-<<<<<<< HEAD
-=======
 import { Storage } from '@ionic/storage';
->>>>>>> 7e39fad6a8f0ad12ec5d441f6ac0312baec3434f
 
 /*
   Generated class for the DataProvider provider.
@@ -13,10 +10,6 @@ import { Storage } from '@ionic/storage';
 @Injectable()
 export class DataProvider {
 
-<<<<<<< HEAD
-  constructor() {
-    console.log('Hello DataProvider Provider');
-=======
   constructor(public storage: Storage){
    
   }
@@ -36,7 +29,6 @@ export class DataProvider {
     });
     let newData = JSON.stringify(saveData);
     this.storage.set('checklists', newData);
->>>>>>> 7e39fad6a8f0ad12ec5d441f6ac0312baec3434f
   }
 
 }

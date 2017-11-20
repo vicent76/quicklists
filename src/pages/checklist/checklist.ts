@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-=======
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
->>>>>>> 7e39fad6a8f0ad12ec5d441f6ac0312baec3434f
 
 /**
  * Generated class for the ChecklistPage page.
@@ -18,24 +14,17 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
   templateUrl: 'checklist.html',
 })
 export class ChecklistPage {
-<<<<<<< HEAD
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-=======
   checklist: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,public alertCtrl: AlertController) {
 
     this.checklist = this.navParams.get('checklist');
->>>>>>> 7e39fad6a8f0ad12ec5d441f6ac0312baec3434f
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ChecklistPage');
   }
 
-<<<<<<< HEAD
-=======
   addItem(): void{
 
     let prompt = this.alertCtrl.create({
@@ -103,5 +92,4 @@ export class ChecklistPage {
     });
   }
 
->>>>>>> 7e39fad6a8f0ad12ec5d441f6ac0312baec3434f
 }
